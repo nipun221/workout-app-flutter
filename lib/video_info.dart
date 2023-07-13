@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:home_workout/home_page.dart';
@@ -11,6 +13,21 @@ class VideoInfo extends StatefulWidget {
 }
 
 class _VideoInfoState extends State<VideoInfo> {
+
+  List info = [];
+
+  _initData(){
+    DefaultAssetBundle.of(context).loadString("json/videoinfo.json").then((value) {
+      info = json.decode(value);
+    });
+  }
+
+  @override
+  void initState(){
+    super.initState();
+    _initData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
