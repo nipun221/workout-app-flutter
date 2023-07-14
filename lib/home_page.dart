@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            const SizedBox(height: 30.0),
+            const SizedBox(height: 25.0),
             Row(
               children: [
                 Text(
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            const SizedBox(height: 20.0),
+            const SizedBox(height: 40.0),
             Container(
               width: MediaQuery.of(context).size.width,
               height: 220.0,
@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                               BoxShadow(
                                 color: color.AppColor.gradientFirst,
                                 blurRadius: 10,
-                                offset: const Offset(4,8),
+                                offset: const Offset(1,2),
                               ),
                             ]
                           ),
